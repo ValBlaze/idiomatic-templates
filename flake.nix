@@ -6,10 +6,13 @@
   };
 
   outputs =
-    { self, nixpkgs }:
+    {
+      self,
+      nixpkgs,
+    }:
     {
       templates = {
-        rust.path = ./rust;
+        devshell.path = ./devshell;
       };
     };
 }
